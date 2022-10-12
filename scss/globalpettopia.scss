@@ -1,0 +1,30 @@
+///colores globales 
+$azul:#1947BA;
+$azul2:#0A083A;
+$azul2b:#052167;
+$azul3:#EAF2F9;
+$rosa:#FC637D;
+$amarillo:#F4B221;
+$blanco:#fff;
+/// secundarios
+$cream:#FEFAF2;
+$azulcream:#F2F7FB;
+/////////////////
+/// 
+/// fuentes
+//font-family: 'Maven Pro', sans-serif;
+//font-family: 'Nunito', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500;700;900&family=Nunito:wght@500;600;700;900&display=swap');
+
+
+body{
+    font-family: 'Maven Pro', sans-serif;
+}
+
+
+
+@import 'header';
+@import 'contenidogeneral';
+@import 'extras';
+@import 'footer';
+@import 'media';

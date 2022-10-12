@@ -1,0 +1,36 @@
+.hero{
+    min-height: 90vh;
+
+    & h1{
+        font-family: 'Nunito', sans-serif;
+        color: $azul;
+        font-size: 4.6rem;
+        line-height: 1;
+        & strong{
+            font-weight: 900;
+            color: $rosa;
+        }
+    }
+    & p{
+        color: $rosa;
+        font-size: 1.4rem;
+    }
+
+    & .col-md-7{
+        display: flex;
+        min-height: 80vh;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+    & .col-md-5{
+        
+    }
+}
+
+section{
+    min-height: 100vh;
+    &:nth-child(even){
+       background-color: aliceblue; 
+    }
+}
