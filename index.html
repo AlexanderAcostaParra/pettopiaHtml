@@ -79,6 +79,14 @@
                             </div>
                           
                       </div>
+                      <ul class="arrowSlide1">
+                     <li>
+                        <img src="image/arrow-left-circle.svg" class="prev" alt="">
+                     </li>
+                     <li>
+                        <img src="image/arrow-r-circle.svg" class="next" alt="">
+                     </li>
+                      </ul>
                     </div>
                 </div>
             </div>
@@ -89,10 +97,10 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-5">
-                        <h2>Nuestros Servicios</h2>
+                        <h2 class="SubTitle">Nuestros Servicios</h2>
                     </div>
                     <div class="col-md-5">
-                        <p>En PetTopia ofrecemos todos los servicios veterinarios para tu peludo.</p>
+                        <p class="leadText">En PetTopia ofrecemos todos los servicios veterinarios para tu peludo.</p>
                     </div>
                 </div>
                 <div class="row">
@@ -246,24 +254,24 @@
         <!-- ini equipo -->
         <section id="equipo" class="equipo">
             <div class="container">
-                <div class="row justify-content-center">
+                <div class="row justify-content-center align-items-center">
                     <div class="col-md-5">
-                        <h2>Nuestro Equipo de Desarrollo</h2>
+                        <h2 class="SubTitle">Nuestro Equipo de Desarrollo</h2>
                     </div>
                     <div class="col-md-5">
-                        <figure>
+                        <figure class="mt-5">
                             <img src="image/dog2.png" alt="" class="img-fluid d-block mx-auto">
                         </figure>
                     </div>                    
                 </div>
-                <div class="row justify-content-center">
+                <div class="row justify-content-center align-items-center">
                     <div class="col-md-5">
                         <figure>
                             <img src="image/cat2.png" alt="" class="img-fluid d-block mx-auto">
                         </figure>
                     </div>                    
                     <div class="col-md-5">
-                        <ul>
+                        <ul class="listaEquipo">
                             <li>
                                 <div class="boxList">
                                     <i><img src="image/dog3.png" alt="" class="img-fluid"> Francisco Jose Muñeton</i>
@@ -271,21 +279,21 @@
                             </li>
                             <li>
                                 <div class="boxList">
-                                    <i><img src="image/dog3.png" alt="" class="img-fluid"> Francisco Jose Muñeton</i>
+                                    <i><img src="image/dog3.png" alt="" class="img-fluid"> Milton Andres Silva Nieto</i>
                                 </div>
                             </li>
                             <li>
                                 <div class="boxList">
-                                    <i><img src="image/dog3.png" alt="" class="img-fluid"> Francisco Jose Muñeton</i>
+                                    <i><img src="image/dog3.png" alt="" class="img-fluid"> Alexander Acosta</i>
                                 </div>
                             </li>
                             <li>
                                 <div class="boxList">
-                                    <i><img src="image/dog3.png" alt="" class="img-fluid"> Francisco Jose Muñeton</i>
+                                    <i><img src="image/dog3.png" alt="" class="img-fluid"> Ana Castiblanco</i>
                                 </div>
                             </li>
                         </ul>
-                        <h3>Grupo 32 / Ciclo 4</h3>
+                        <h3 class="extraTitulo">Grupo 32 / Ciclo 4</h3>
                     </div>
                 </div>
             </div>
@@ -309,20 +317,24 @@
 
             ///slider Hero
             $('.boxSliderHero').slick({
-                dots: true,
+                dots: false,
                 infinite: true,
                 speed: 500,
                 fade: true,
-                cssEase: 'linear'
+                cssEase: 'linear',
+                prevArrow: $('.prev'),
+                nextArrow: $('.next')
             });
 
             ///slide serivicios
             $('.sliderServicios').slick({
                 slidesToShow: 4,
                 slidesToScroll: 2,
-                dots: true,
+                dots: false,
                 infinite: true,
                 speed: 500,
+                prevArrow:"<button type='button' class='slick-prev pull-left'><img src='image/left.svg'></button>",
+            nextArrow:"<button type='button' class='slick-next pull-right'><img src='image/right.svg'></button>",
                 responsive: [
                     {
                     breakpoint: 768,
@@ -339,6 +351,7 @@
                             slidesToShow: 2,
                             slidesToScroll: 2,
                             arrows: false,
+                            
                         }
                     }
                 ]

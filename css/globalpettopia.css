@@ -81,7 +81,7 @@ header .boxLog ul li:nth-child(2) i {
 }
 
 .hero {
-  min-height: 90vh;
+  min-height: 60vh;
 }
 .hero h1 {
   font-family: "Nunito", sans-serif;
@@ -101,7 +101,7 @@ header .boxLog ul li:nth-child(2) i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-height: 80vh;
+  min-height: 60vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -112,9 +112,169 @@ header .boxLog ul li:nth-child(2) i {
       -ms-flex-pack: center;
           justify-content: center;
 }
+
 section {
-  min-height: 100vh;
+  min-height: calc(100vh - 180px);
 }
-section:nth-child(even) {
-  background-color: aliceblue;
+section .SubTitle {
+  font-family: "Nunito", sans-serif;
+  color: #1947BA;
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 1;
+  margin-top: 3rem;
+  text-align: center;
+}
+section .leadText {
+  margin-top: 4rem;
+  font-size: 2rem;
+  line-height: 1;
+  color: #FC637D;
+}
+
+.servicios {
+  background: #EAF2F9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.equipo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  min-height: 80vh;
+  padding-top: 4vh;
+}
+.equipo .listaEquipo {
+  list-style: none;
+}
+.equipo .listaEquipo li {
+  font-size: 2rem;
+  color: #FC637D;
+}
+.equipo .listaEquipo li img {
+  width: 30px;
+}
+.equipo .extraTitulo {
+  font-family: "Nunito", sans-serif;
+  color: #0A083A;
+  font-weight: 900;
+  text-align: center;
+  font-size: 3rem;
+}
+.equipo h2 {
+  text-align: left;
+}
+
+.boxLogin {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.arrowSlide1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+}
+.arrowSlide1 li {
+  cursor: pointer;
+}
+.arrowSlide1 li img {
+  background: transparent !important;
+}
+
+.sliderServicios {
+  margin-top: 3rem;
+}
+.sliderServicios .itemServicio .boxItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.sliderServicios .itemServicio .boxItem .boxIcon {
+  background: #fff;
+  width: 160px;
+  height: 160px;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1rem;
+  -webkit-box-shadow: 10px 28px 33px -31px rgba(0, 0, 0, 0.51);
+  box-shadow: 10px 28px 33px -31px rgba(0, 0, 0, 0.51);
+}
+.sliderServicios .itemServicio .boxItem .boxIcon figure {
+  margin: 0;
+  padding: 2rem;
+}
+.sliderServicios .itemServicio .boxItem .boxTexto {
+  text-align: center;
+}
+.sliderServicios .itemServicio .boxItem .boxTexto h2 {
+  font-family: "Nunito", sans-serif;
+  color: #1947BA;
+  font-weight: 900;
+}
+
+.slick-arrow {
+  z-index: 9;
+  background: #FC637D !important;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.slick-arrow::before {
+  display: none;
+}
+.slick-arrow img {
+  width: 20px;
+}
+
+footer {
+  padding: 2rem;
+  background: #F2F7FB;
+  text-align: center;
+  font-size: 0.8rem;
 }

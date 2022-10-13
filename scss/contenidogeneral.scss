@@ -1,5 +1,5 @@
 .hero{
-    min-height: 90vh;
+    min-height: 60vh;
 
     & h1{
         font-family: 'Nunito', sans-serif;
@@ -18,19 +18,73 @@
 
     & .col-md-7{
         display: flex;
-        min-height: 80vh;
+        min-height: 60vh;
         flex-direction: column;
         align-content: center;
         justify-content: center;
     }
-    & .col-md-5{
-        
-    }
+   
 }
 
 section{
-    min-height: 100vh;
-    &:nth-child(even){
-       background-color: aliceblue; 
+    min-height: calc(100vh - 180px);
+    // &:nth-child(even){
+    //    background-color: aliceblue; 
+    // }
+
+    & .SubTitle{
+        font-family: 'Nunito', sans-serif;
+        color: $azul;
+        font-size: 4rem;
+        font-weight: 900;
+        line-height: 1;
+        margin-top: 3rem;text-align: center;
     }
+
+    & .leadText{
+        margin-top: 4rem;
+        font-size: 2rem;
+        line-height: 1;
+        color: $rosa;
+    }
+}
+
+.servicios{
+    background: $azul3;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.equipo{ 
+    display: flex;
+    align-items: center;
+    align-content: center;
+    min-height: 80vh;
+padding-top: 4vh;
+    & .listaEquipo{
+        list-style: none;
+        & li{
+            & img{
+                width: 30px;
+            }
+            font-size: 2rem;
+            color: $rosa;
+        }
+    }
+    & .extraTitulo{
+        font-family: 'Nunito', sans-serif;
+        color: $azul2;
+        font-weight: 900;
+        text-align: center;
+        font-size: 3rem;
+    }
+    & h2{
+        text-align: left;
+    }
+}
+
+
+.boxLogin{
+    box-sizing: border-box;
 }
