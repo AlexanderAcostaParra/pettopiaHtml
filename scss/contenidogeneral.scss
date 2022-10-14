@@ -88,3 +88,129 @@ padding-top: 4vh;
 .boxLogin{
     box-sizing: border-box;
 }
+
+.boxForm{
+    min-height: 60vh;
+    & .SubTitle{
+        font-size: 2.4rem;
+        margin-top: 4rem;
+    }
+}
+.boxRegPeludo{
+    width: 100%;
+    min-height: 20vh;
+    background: $azul3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    & p{
+        color: $azul;
+        font-family: 'Nunito', sans-serif;
+        font-size: 1.4rem;
+        padding: 0 2rem;
+        font-weight: 800;
+        & span{
+            font-weight: 900;
+            color: $rosa;
+        }
+    }
+    & .cat1{
+        width: 120px; 
+        & figure{
+            & img{
+                display: block;
+                width: 80px;
+                margin: auto;
+            }
+        }
+    }
+    & .dog1{
+        width: 120px; 
+        & figure{
+            & img{
+                display: block;
+                width: 80px;
+                margin: auto;
+            }
+        }
+    }
+}
+
+.leftBox{
+    background: $cream;
+    position: relative;
+    overflow: hidden;
+    & .hoja1{
+        width: 120px;
+        height: 160px;
+        background:url(/image/hojas1.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    & .hoja2{
+        width: 120px;
+        height: 200px;
+        background: url(/image/hojas2.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: block;
+        position: absolute;
+        left: -10px;
+        top: -100px;
+    }
+}
+
+.form-control{
+    border: 0;
+    border-bottom: 1px solid $azul3;
+    border-radius: 0; 
+    font-size: 1.3rem;
+    text-align: center;
+    color: $rosa !important;
+    &::placeholder{
+        color: $place;
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    &textarea{
+        padding-top:60px;
+    }
+}
+.form-select{
+    border: 0 ; 
+    border-bottom: 1px solid $azul3;
+    border-radius: 0; 
+    font-size: 1.3rem;
+    text-align: center;
+    color: $rosa !important;
+    &::placeholder{
+        color: $place;
+        font-size: 1.3rem;
+        text-align: center;
+    }
+   
+}
+
+.btn{
+    background: $rosa;
+    border: 0;
+    border-radius: 30px;
+    min-width: 180px;
+
+}
+
+.regLeft{
+    background: $azulcream;
+}
+
+.logUser{
+    color:$rosa;
+}

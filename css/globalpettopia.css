@@ -3,6 +3,20 @@ body {
   font-family: "Maven Pro", sans-serif;
 }
 
+.h60 {
+  min-height: 84vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  color: inherit;
+  opacity: 0.9;
+  text-decoration: underline;
+}
+
 header {
   display: block;
   background: #EAF2F9;
@@ -182,6 +196,173 @@ section .leadText {
           box-sizing: border-box;
 }
 
+.boxForm {
+  min-height: 60vh;
+}
+.boxForm .SubTitle {
+  font-size: 2.4rem;
+  margin-top: 4rem;
+}
+
+.boxRegPeludo {
+  width: 100%;
+  min-height: 20vh;
+  background: #EAF2F9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+.boxRegPeludo p {
+  color: #1947BA;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.4rem;
+  padding: 0 2rem;
+  font-weight: 800;
+}
+.boxRegPeludo p span {
+  font-weight: 900;
+  color: #FC637D;
+}
+.boxRegPeludo .cat1 {
+  width: 120px;
+}
+.boxRegPeludo .cat1 figure img {
+  display: block;
+  width: 80px;
+  margin: auto;
+}
+.boxRegPeludo .dog1 {
+  width: 120px;
+}
+.boxRegPeludo .dog1 figure img {
+  display: block;
+  width: 80px;
+  margin: auto;
+}
+
+.leftBox {
+  background: #FEFAF2;
+  position: relative;
+  overflow: hidden;
+}
+.leftBox .hoja1 {
+  width: 120px;
+  height: 160px;
+  background: url(/image/hojas1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.leftBox .hoja2 {
+  width: 120px;
+  height: 200px;
+  background: url(/image/hojas2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  position: absolute;
+  left: -10px;
+  top: -100px;
+}
+
+.form-control {
+  border: 0;
+  border-bottom: 1px solid #EAF2F9;
+  border-radius: 0;
+  font-size: 1.3rem;
+  text-align: center;
+  color: #FC637D !important;
+}
+.form-control::-webkit-input-placeholder {
+  color: #ceced8;
+  font-size: 1.3rem;
+  text-align: center;
+}
+.form-control::-moz-placeholder {
+  color: #ceced8;
+  font-size: 1.3rem;
+  text-align: center;
+}
+.form-control:-ms-input-placeholder {
+  color: #ceced8;
+  font-size: 1.3rem;
+  text-align: center;
+}
+.form-control::-ms-input-placeholder {
+  color: #ceced8;
+  font-size: 1.3rem;
+  text-align: center;
+}
+.form-control::placeholder {
+  color: #ceced8;
+  font-size: 1.3rem;
+  text-align: center;
+}
+.form-controltextarea {
+  padding-top: 60px;
+}
+
+.form-select {
+  border: 0;
+  border-bottom: 1px solid #EAF2F9;
+  border-radius: 0;
+  font-size: 1.3rem;
+  text-align: center;
+  color: #FC637D !important;
+}
+.form-select::-webkit-input-placeholder {
+  color: #ceced8;
+  font-size: 1.3rem;
+  text-align: center;
+}
+.form-select::-moz-placeholder {
+  color: #ceced8;
+  font-size: 1.3rem;
+  text-align: center;
+}
+.form-select:-ms-input-placeholder {
+  color: #ceced8;
+  font-size: 1.3rem;
+  text-align: center;
+}
+.form-select::-ms-input-placeholder {
+  color: #ceced8;
+  font-size: 1.3rem;
+  text-align: center;
+}
+.form-select::placeholder {
+  color: #ceced8;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.btn {
+  background: #FC637D;
+  border: 0;
+  border-radius: 30px;
+  min-width: 180px;
+}
+
+.regLeft {
+  background: #F2F7FB;
+}
+
+.logUser {
+  color: #FC637D;
+}
+
 .arrowSlide1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -277,4 +458,5 @@ footer {
   background: #F2F7FB;
   text-align: center;
   font-size: 0.8rem;
+  color: #FC637D;
 }
